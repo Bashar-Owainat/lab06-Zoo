@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ZooApp
 {
-    class Dog : Mammals
+       public class Dog : Mammals, IAdopt, IAoptable
     {
         public override void Move()
         {
@@ -28,9 +28,11 @@ namespace ZooApp
             Console.WriteLine("Live Birth");
         }
 
-        public override void Sound()
+        public override string Sound()
         {
-            Console.WriteLine("Bark");
+            string sound = "Bark";
+            Console.WriteLine(sound);
+            return sound;
         }
 
         public override void AttitudeWithHumans()
@@ -48,6 +50,40 @@ namespace ZooApp
         {
 
             return this.CoveredWithFurOrHair;
+        }
+
+
+
+        public string application
+        {
+            set; get;
+        }
+
+        public int AgeRequirements
+        {
+            set; get;
+        }
+
+        public int ApotionFee
+        {
+            set; get;
+        }
+
+        public string HomeVisit()
+        {
+            string message = "we are on the way to check if you can adopt this dog";
+            Console.WriteLine(message);
+            return message;
+        }
+
+        public Boolean friendly
+        {
+            set; get;
+        }
+
+        public Boolean goodWithKids
+        {
+            set; get;
         }
     }
 

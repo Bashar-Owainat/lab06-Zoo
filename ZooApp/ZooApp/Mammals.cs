@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ZooApp
 {
-     abstract class Mammals : WarmBlooded
+     public abstract class Mammals : WarmBlooded
     {
         public string CoveredWithFurOrHair;
       
@@ -22,9 +22,11 @@ namespace ZooApp
             return this.CoveredWithFurOrHair;
         }
 
-        public virtual void Sound()
+        public virtual string Sound()
         {
-            Console.WriteLine("This differes according to the animal");
+            string sound = "This differes according to the animal";
+            Console.WriteLine(sound);
+            return sound;
         }
         public virtual void AttitudeWithHumans()
         {

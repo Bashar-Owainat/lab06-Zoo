@@ -8,6 +8,7 @@ namespace ZooApp
         {
             
             Dog dog1 = new Dog();
+            dog1.HomeVisit();
             string input = "fur";
             dog1.SetCoveredWithFurOrHair(input);
 
@@ -29,7 +30,7 @@ namespace ZooApp
             Swordfish swordfish1 = new Swordfish();
             swordfish1.Eat();
 
-            
+
             Dog husky = new SiberianHusky();  // polymorphism
             string input2 = "hair";
             husky.SetCoveredWithFurOrHair(input2);

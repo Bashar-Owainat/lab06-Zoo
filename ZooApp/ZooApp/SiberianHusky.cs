@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ZooApp
 {
-    class SiberianHusky : Dog
+    public class SiberianHusky : Dog
     {
         public string  MakesNoise = "More than other dogs Huskies make a lot of noise";
 

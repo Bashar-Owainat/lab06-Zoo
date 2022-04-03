@@ -8,7 +8,7 @@ namespace ZooApp
 {
     //inherits Animal
 
-    abstract class WarmBlooded : Animal
+        public abstract class WarmBlooded : Animal
     {
         public Boolean CanMaintainBodyTemp = true;
 
