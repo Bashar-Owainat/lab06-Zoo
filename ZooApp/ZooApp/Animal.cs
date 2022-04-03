@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ZooApp
 {
-    abstract class Animal
+    public abstract class Animal
     {
         //abstraction
         public abstract void Move();

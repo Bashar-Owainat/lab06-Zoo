@@ -20,4 +20,55 @@ In Program class
 - I used polymorphism (Dog husky = new SiberianHusky();)
 
 
+## lab 7
+
+
+I added two interfaces IAdopt and Iadoptable.
+
+
+### IAdopt has the following:
+
+
+  string application
+        {
+            set; get;
+        }
+
+        int AgeRequirements
+        {
+            set; get;
+        }
+
+        int ApotionFee
+        {
+            set; get;
+        }
+
+        string HomeVisit();
+
+
+### Iadoptable has the following:
+
+
+        Boolean friendly
+        {
+            set; get;
+        }
+
+        Boolean goodWithKids
+        {
+            set; get;
+        }
+
+## tests
+I created three Xunit tests:
+
+- InterfaceImplementation()
+
+- Inheritance()
+
+- Ploymorphism()
+
+
+
 
