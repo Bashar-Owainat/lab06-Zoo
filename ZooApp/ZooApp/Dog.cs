@@ -35,9 +35,11 @@ namespace ZooApp
             return sound;
         }
 
-        public override void AttitudeWithHumans()
+        public override string AttitudeWithHumans()
         {
-            Console.WriteLine("finendly");
+            string attitude = "friendly";
+            Console.WriteLine(attitude);
+            return attitude;
         }
 
         public override void SetCoveredWithFurOrHair(String input)

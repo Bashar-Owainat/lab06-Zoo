@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ZooApp
 {
-    class Horse : Mammals
+    public class Horse : Mammals
     {
         public override void Move()
         {
@@ -28,6 +28,11 @@ namespace ZooApp
             Console.WriteLine("Live Birth");
         }
 
-   
+        public override string AttitudeWithHumans()
+        {
+            string attitude = "friendly";
+            Console.WriteLine(attitude);
+            return attitude;
+        }
     }
 }

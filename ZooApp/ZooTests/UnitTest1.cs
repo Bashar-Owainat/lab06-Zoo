@@ -6,6 +6,28 @@ namespace ZooTests
 {
     public class UnitTest1
     {
+       // tests for lab 6
+
+        [Fact]
+        public void IsSubclass()
+        {
+           Assert.True( typeof(Dog).IsSubclassOf(typeof(Animal)));
+        }
+            
+
+        [Fact]
+        public void ExibitBehaivourFromBaseClass()
+        {
+            Dog doggy = new Dog();
+            Horse horse = new Horse();
+
+            Assert.Equal("Bark", doggy.Sound());
+            Assert.Equal("friendly", horse.AttitudeWithHumans());
+        }
+
+
+
+    //tests for lab 7
         [Fact]
         public void InterfaceImplementation()
         {
@@ -33,6 +55,5 @@ namespace ZooTests
 
             Assert.Equal("hair", husky.GetCoveredWithFurOrHair());
         }
-
     }
 }

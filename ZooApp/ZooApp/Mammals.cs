@@ -28,9 +28,11 @@ namespace ZooApp
             Console.WriteLine(sound);
             return sound;
         }
-        public virtual void AttitudeWithHumans()
+        public virtual string AttitudeWithHumans()
         {
-            Console.WriteLine("This differes according to the animal");
+            string attitde = "This differes according to the animal";
+            Console.WriteLine(attitde);
+            return attitde;
         }
     }
 }
